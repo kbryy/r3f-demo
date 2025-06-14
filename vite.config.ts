@@ -3,7 +3,13 @@ import { defineConfig } from 'vite'
 
 export default defineConfig(({ mode }) => {
   return {
-    plugins: [react()],
+    plugins: [
+      react({
+        babel: {
+          plugins: [['babel-plugin-react-compiler', {}]],
+        },
+      }),
+    ],
     base:
       // GitHub Pages用にリポジトリ名をbaseに設定
       mode === 'production' && process.env.GITHUB_REPOSITORY
