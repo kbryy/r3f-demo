@@ -1,0 +1,43 @@
+{
+  "name": "react-three.js",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@react-three/drei": "^10.2.0",
+    "@react-three/fiber": "^9.1.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "^0.171.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@types/node": "^24.0.1",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@types/three": "^0.171.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.1",
+    "typescript": "^5.8.3",
+    "vite": "^5.0.10"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,md}": [
+      "biome format --write",
+      "biome check --write"
+    ],
+    "*.{ts,tsx}": ["tsc --noEmit --skipLibCheck"]
+  }
+}
