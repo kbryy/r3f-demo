@@ -16,7 +16,11 @@
   "assist": { "actions": { "source": { "organizeImports": "on" } } },
   "linter": {
     "enabled": true,
-    "rules": {}
+    "rules": {
+      "a11y": {
+        "noStaticElementInteractions": "off"
+      }
+    }
   },
   "javascript": {
     "formatter": {

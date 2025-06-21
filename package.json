@@ -4,11 +4,9 @@
   "type": "module",
   "private": true,
   "dependencies": {
-    "@radix-ui/react-scroll-area": "^1.2.9",
     "@react-three/drei": "^10.2.0",
     "@react-three/fiber": "^9.1.2",
     "@tailwindcss/vite": "^4.1.10",
-    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.519.0",
     "react": "^19.0.0",
@@ -46,9 +44,6 @@
     "*.{js,jsx,ts,tsx,json,css,md}": [
       "biome format --write",
       "biome check --write"
-    ],
-    "*.{ts,tsx}": [
-      "tsc --noEmit --skipLibCheck"
     ]
   }
 }

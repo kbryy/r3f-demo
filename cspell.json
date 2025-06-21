@@ -1,4 +1,10 @@
 {
   "version": "0.2",
-  "words": ["drei", "GLTF"]
+  "words": [
+    "drei",
+    "frameloop",
+    "GLTF",
+    "hoge",
+    "metalness"
+  ]
 }
