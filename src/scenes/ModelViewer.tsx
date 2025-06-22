@@ -3,11 +3,10 @@ import { Canvas } from '@react-three/fiber'
 import { useRef } from 'react'
 import type { Group } from 'three'
 
-const modelPath = `${import.meta.env.BASE_URL}models/model.glb`
-useGLTF.preload(modelPath)
+useGLTF.preload('./models/model.glb')
 
 export const ModelViewer = () => {
-  const { scene } = useGLTF(modelPath)
+  const { scene } = useGLTF('./models/model.glb')
   const modelRef = useRef<Group>(null)
   return (
     <Canvas
