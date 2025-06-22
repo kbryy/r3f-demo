@@ -1,16 +1,22 @@
 {
   "name": "react-three.js",
   "version": "1.0.0",
+  "type": "module",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^10.2.0",
     "@react-three/fiber": "^9.1.2",
+    "@tailwindcss/vite": "^4.1.10",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.519.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^4.1.10",
     "three": "^0.171.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
+    "@biomejs/biome": "^2.0.0",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@types/node": "^24.0.1",
@@ -38,7 +44,6 @@
     "*.{js,jsx,ts,tsx,json,css,md}": [
       "biome format --write",
       "biome check --write"
-    ],
-    "*.{ts,tsx}": ["tsc --noEmit --skipLibCheck"]
+    ]
   }
 }

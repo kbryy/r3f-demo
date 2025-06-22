@@ -1,18 +1,32 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import "tailwindcss";
+
+@theme {
+  --color-background: hsl(0 0% 100%);
+  --color-border: hsl(240 5.9% 90%);
+  --color-card: hsl(0 0% 100%);
 }
 
-html,
-body,
-#root {
-  width: 100vw;
-  height: 100dvh;
-}
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
-.app {
-  width: 100%;
-  height: 100%;
-  background: #1a1a1a;
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100vw;
+    height: 100dvh;
+  }
 }
